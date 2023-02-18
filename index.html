@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+
+    <!-- css and bootstap links -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header section -->
+    <header
+        class="container text-center my-5 p-4 bg-info bg-gradient bg-opacity-50 d-flex flex-column flex-md-row align-items-center justify-content-between rounded">
+        <div>
+            <h1>Interactive</h1>
+            <h4 class="text-body-tertiary">Geometry Genius</h4>
+        </div>
+        <div>
+            <button type="button" class="btn btn-primary px-4">Blog</button>
+        </div>
+    </header>
+    <!-- card section -->
+    <section>
+        <div class="container text-center">
+            <div class="row">
+                <!-- triangle card -->
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card p-3" style="width: 18rem;">
+                        <img src="images/triangle.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Triangle</h5>
+                            <p class="card-text">Area (A) = 0.5 x b x h</p>
+                            <div class="d-flex align-items-center m-2 p-1">
+                                <input type="text" class="form-control" placeholder="b" id="">
+                                <div>cm</div>
+                                <input type="text" class="form-control" placeholder="h" id="">
+                                <div>cm</div>
+                            </div>
+                            <button type="button" class="btn btn-primary px-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- rectangle card -->
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card p-3" style="width: 18rem;">
+                        <img src="images/rectangle.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rectangle</h5>
+                            <p class="card-text">Area (A) = w x l</p>
+                            <div class="d-flex align-items-center m-2 p-1">
+                                <input type="text" class="form-control" placeholder="w" id="">
+                                <div>cm</div>
+                                <input type="text" class="form-control" placeholder="l" id="">
+                                <div>cm</div>
+                            </div>
+                            <button type="button" class="btn btn-primary px-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- parallelogram card  -->
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card p-3" style="width: 18rem;">
+                        <img src="images/parallelogram.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Parallelogram</h5>
+                            <p class="card-text">Area (A) = b x h</p>
+                            <div class="d-flex align-items-center m-2 p-1">
+                                <input type="text" class="form-control" placeholder="b" id="">
+                                <div>cm</div>
+                                <input type="text" class="form-control" placeholder="h" id="">
+                                <div>cm</div>
+                            </div>
+                            <button type="button" class="btn btn-primary px-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- result card  -->
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card p-3" style="width: 18rem;">  
+                        <div class="card-body">
+                            <h5 class="card-title">Area Calculation</h5>
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!-- rhombus card  -->
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card p-3" style="width: 18rem;">
+                        <img src="images/rhombus.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Rhombus</h5>
+                            <p class="card-text">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> </p>
+                            <div class="d-flex align-items-center m-2 p-1">
+                                <input type="text" class="form-control" placeholder="d1" id="">
+                                <div>cm</div>
+                                <input type="text" class="form-control" placeholder="d2" id="">
+                                <div>cm</div>
+                            </div>
+                            <button type="button" class="btn btn-primary px-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- pentagon card  -->
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card p-3" style="width: 18rem;">
+                        <img src="images/pentagon.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pentagon</h5>
+                            <p class="card-text">Area (A) = 0.5 x p x b</p>
+                            <div class="d-flex align-items-center m-2 p-1">
+                                <input type="text" class="form-control" placeholder="p" id="">
+                                <div>cm</div>
+                                <input type="text" class="form-control" placeholder="b" id="">
+                                <div>cm</div>
+                            </div>
+                            <button type="button" class="btn btn-primary px-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- ellipse card  -->
+                <div class="col-12 col-md-3 mb-4">
+                    <div class="card p-3" style="width: 18rem;">
+                        <img src="images/ellipse.png" class="card-img-top img-fluid" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Ellipse</h5>
+                            <p class="card-text">Area (A) = &pi;ab </p>
+                            <div class="d-flex align-items-center m-2 p-1">
+                                <input type="text" class="form-control" placeholder="a" id="">
+                                <div>cm</div>
+                                <input type="text" class="form-control" placeholder="b" id="">
+                                <div>cm</div>
+                            </div>
+                            <button type="button" class="btn btn-primary px-4">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- js links -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
