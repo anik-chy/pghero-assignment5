@@ -55,8 +55,7 @@ function calArea(multiFactor, objName) {
       const li = document.createElement("li");
       li.setAttribute("id", objName + "-li");
       li.setAttribute("class", "mb-2");
-      li.innerHTML = `${str} <button type="button" class="btn btn-primary px-1";
-    onclick="calArea(1,'parallel-card')">Convert to m²</button>`;
+      li.innerHTML = `${str} <button type="button" class="btn btn-primary px-1">Convert to m²</button>`;
       areaList.appendChild(li);
     }
     else{

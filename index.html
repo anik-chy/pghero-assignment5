@@ -30,131 +30,126 @@
         <div class="container text-center">
             <div class="row">
                 <!-- triangle card -->
-                <div class="col-12 col-md-3 mb-4">
-                    <div class="card p-3" style="width: 18rem;" id="triangle-card"
-                        onmouseenter="changeRandColor('triangle-card')" onmouseleave="resetCardColor('triangle-card')">
-                        <img src="images/triangle.png" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Triangle</h5>
-                            <p class="card-text">Area (A) = 0.5 x b x h</p>
-                            <div class="d-flex align-items-center m-2 p-1">
-                                <input type="text" class="form-control" placeholder="b" id="triangle-card-f1">
-                                <div>cm</div>
-                                <input type="text" class="form-control" placeholder="h" id="triangle-card-f2">
-                                <div>cm</div>
-                            </div>
-                            <button type="button" class="btn btn-primary px-4"
-                                onclick="calArea(0.5,'triangle-card')">Calculate</button>
+                <div class="card col-12 col-md-3 m-2 p-3" style="width: 18rem;" id="triangle-card"
+                    onmouseenter="changeRandColor('triangle-card')" onmouseleave="resetCardColor('triangle-card')">
+                    <img src="images/triangle.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Triangle</h5>
+                        <p class="card-text">Area (A) = 0.5 x b x h</p>
+                        <div class="d-flex align-items-center m-2 p-1">
+                            <input type="text" class="form-control" placeholder="b" id="triangle-card-f1">
+                            <div>cm</div>
+                            <input type="text" class="form-control" placeholder="h" id="triangle-card-f2">
+                            <div>cm</div>
                         </div>
+                        <button type="button" class="btn btn-primary px-4"
+                            onclick="calArea(0.5,'triangle-card')">Calculate</button>
                     </div>
                 </div>
                 <!-- rectangle card -->
-                <div class="col-12 col-md-3 mb-4">
-                    <div class="card p-3" style="width: 18rem;" id="rectangle-card"
-                        onmouseenter="changeRandColor('rectangle-card')"
-                        onmouseleave="resetCardColor('rectangle-card')">
-                        <img src="images/rectangle.png" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Rectangle</h5>
-                            <p class="card-text">Area (A) = w x l</p>
-                            <div class="d-flex align-items-center m-2 p-1">
-                                <input type="text" class="form-control" placeholder="w" id="rectangle-card-f1">
-                                <div>cm</div>
-                                <input type="text" class="form-control" placeholder="l" id="rectangle-card-f2">
-                                <div>cm</div>
-                            </div>
-                            <button type="button" class="btn btn-primary px-4"
-                                onclick="calArea(1,'rectangle-card')">Calculate</button>
+                <div class="card col-12 col-md-3 m-2 p-3" style="width: 18rem;" id="rectangle-card"
+                    onmouseenter="changeRandColor('rectangle-card')" onmouseleave="resetCardColor('rectangle-card')">
+                    <img src="images/rectangle.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rectangle</h5>
+                        <p class="card-text">Area (A) = w x l</p>
+                        <div class="d-flex align-items-center m-2 p-1">
+                            <input type="text" class="form-control" placeholder="w" id="rectangle-card-f1">
+                            <div>cm</div>
+                            <input type="text" class="form-control" placeholder="l" id="rectangle-card-f2">
+                            <div>cm</div>
                         </div>
+                        <button type="button" class="btn btn-primary px-4"
+                            onclick="calArea(1,'rectangle-card')">Calculate</button>
                     </div>
                 </div>
                 <!-- parallelogram card  -->
-                <div class="col-12 col-md-3 mb-4">
-                    <div class="card p-3" style="width: 18rem;" id="parallelogram-card"
-                        onmouseenter="changeRandColor('parallelogram-card')" onmouseleave="resetCardColor('parallelogram-card')">
-                        <img src="images/parallelogram.png" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Parallelogram</h5>
-                            <p class="card-text">Area (A) = b x h</p>
-                            <div class="d-flex align-items-center m-2 p-1">
-                                <input type="text" class="form-control" placeholder="b" id="parallelogram-card-f1">
-                                <div>cm</div>
-                                <input type="text" class="form-control" placeholder="h" id="parallelogram-card-f2">
-                                <div>cm</div>
-                            </div>
-                            <button type="button" class="btn btn-primary px-4"
-                                onclick="calArea(1,'parallelogram-card')">Calculate</button>
+
+                <div class="card col-12 col-md-3 m-2 p-3" style="width: 18rem;" id="parallelogram-card"
+                    onmouseenter="changeRandColor('parallelogram-card')"
+                    onmouseleave="resetCardColor('parallelogram-card')">
+                    <img src="images/parallelogram.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Parallelogram</h5>
+                        <p class="card-text">Area (A) = b x h</p>
+                        <div class="d-flex align-items-center m-2 p-1">
+                            <input type="text" class="form-control" placeholder="b" id="parallelogram-card-f1">
+                            <div>cm</div>
+                            <input type="text" class="form-control" placeholder="h" id="parallelogram-card-f2">
+                            <div>cm</div>
                         </div>
+                        <button type="button" class="btn btn-primary px-4"
+                            onclick="calArea(1,'parallelogram-card')">Calculate</button>
                     </div>
                 </div>
+
                 <!-- area card  -->
-                <div class="col-12 col-md-3 mb-4">
-                    <div class="card" style="width: 22rem;" id="area-card"
-                        onmouseenter="changeRandColor('area-card')" onmouseleave="resetCardColor('area-card')">
-                        <div class="card-body">
-                            <h5 class="card-title">Area Calculation</h5>
-                            <ol class="text-start" id="area-list">
-                            </ol>
-                        </div>
+
+                <div class="card m-2" style="width: 24rem;" id="area-card"
+                    onmouseenter="changeRandColor('area-card')" onmouseleave="resetCardColor('area-card')">
+                    <div class="card-body">
+                        <h5 class="card-title">Area Calculation</h5>
+                        <ol class="text-start" id="area-list">
+                        </ol>
                     </div>
                 </div>
+
             </div>
             <div class="row">
+                
                 <!-- rhombus card  -->
-                <div class="col-12 col-md-3 mb-4">
-                    <div class="card p-3" style="width: 18rem;" id="rhombus-card"
-                        onmouseenter="changeRandColor('rhombus-card')" onmouseleave="resetCardColor('rhombus-card')">
-                        <img src="images/rhombus.png" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Rhombus</h5>
-                            <p class="card-text">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> </p>
-                            <div class="d-flex align-items-center m-2 p-1">
-                                <input type="text" class="form-control" placeholder="d1" id="rhombus-card-f1">
-                                <div>cm</div>
-                                <input type="text" class="form-control" placeholder="d2" id="rhombus-card-f2">
-                                <div>cm</div>
-                            </div>
-                            <button type="button" class="btn btn-primary px-4"
-                                onclick="calArea(0.5,'rhombus-card')">Calculate</button>
+                <div class="card col-12 col-md-3 m-2 p-3" style="width: 18rem;" id="rhombus-card"
+                    onmouseenter="changeRandColor('rhombus-card')" onmouseleave="resetCardColor('rhombus-card')">
+                    <img src="images/rhombus.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rhombus</h5>
+                        <p class="card-text">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> </p>
+                        <div class="d-flex align-items-center m-2 p-1">
+                            <input type="text" class="form-control" placeholder="d1" id="rhombus-card-f1">
+                            <div>cm</div>
+                            <input type="text" class="form-control" placeholder="d2" id="rhombus-card-f2">
+                            <div>cm</div>
                         </div>
+                        <button type="button" class="btn btn-primary px-4"
+                            onclick="calArea(0.5,'rhombus-card')">Calculate</button>
                     </div>
                 </div>
+
                 <!-- pentagon card  -->
-                <div class="col-12 col-md-3 mb-4">
-                    <div class="card p-3" style="width: 18rem;" id="pentagon-card"
-                        onmouseenter="changeRandColor('pentagon-card')" onmouseleave="resetCardColor('pentagon-card')">
-                        <img src="images/pentagon.png" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Pentagon</h5>
-                            <p class="card-text">Area (A) = 0.5 x p x b</p>
-                            <div class="d-flex align-items-center m-2 p-1">
-                                <input type="text" class="form-control" placeholder="p" id="pentagon-card-f1">
-                                <div>cm</div>
-                                <input type="text" class="form-control" placeholder="b" id="pentagon-card-f2">
-                                <div>cm</div>
-                            </div>
-                            <button type="button" class="btn btn-primary px-4"
-                                onclick="calArea(0.5,'pentagon-card')">Calculate</button>
+
+                <div class="card col-12 col-md-3 m-2 p-3" style="width: 18rem;" id="pentagon-card"
+                    onmouseenter="changeRandColor('pentagon-card')" onmouseleave="resetCardColor('pentagon-card')">
+                    <img src="images/pentagon.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pentagon</h5>
+                        <p class="card-text">Area (A) = 0.5 x p x b</p>
+                        <div class="d-flex align-items-center m-2 p-1">
+                            <input type="text" class="form-control" placeholder="p" id="pentagon-card-f1">
+                            <div>cm</div>
+                            <input type="text" class="form-control" placeholder="b" id="pentagon-card-f2">
+                            <div>cm</div>
                         </div>
+                        <button type="button" class="btn btn-primary px-4"
+                            onclick="calArea(0.5,'pentagon-card')">Calculate</button>
                     </div>
                 </div>
+
                 <!-- ellipse card  -->
-                <div class="col-12 col-md-3 mb-4">
-                    <div class="card p-3" style="width: 18rem;" id="ellipse-card"
-                        onmouseenter="changeRandColor('ellipse-card')" onmouseleave="resetCardColor('ellipse-card')">
-                        <img src="images/ellipse.png" class="card-img-top img-fluid" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ellipse</h5>
-                            <p class="card-text">Area (A) = &pi;ab </p>
-                            <div class="d-flex align-items-center m-2 p-1">
-                                <input type="text" class="form-control" placeholder="a" id="ellipse-card-f1">
-                                <div>cm</div>
-                                <input type="text" class="form-control" placeholder="b" id="ellipse-card-f2">
-                                <div>cm</div>
-                            </div>
-                            <button type="button" class="btn btn-primary px-4"
-                                onclick="calArea(3.14,'ellipse-card')">Calculate</button>
+
+                <div class="card col-12 col-md-3 m-2 p-3" style="width: 18rem;" id="ellipse-card"
+                    onmouseenter="changeRandColor('ellipse-card')" onmouseleave="resetCardColor('ellipse-card')">
+                    <img src="images/ellipse.png" class="card-img-top img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Ellipse</h5>
+                        <p class="card-text">Area (A) = &pi;ab </p>
+                        <div class="d-flex align-items-center m-2 p-1">
+                            <input type="text" class="form-control" placeholder="a" id="ellipse-card-f1">
+                            <div>cm</div>
+                            <input type="text" class="form-control" placeholder="b" id="ellipse-card-f2">
+                            <div>cm</div>
                         </div>
+                        <button type="button" class="btn btn-primary px-4"
+                            onclick="calArea(3.14,'ellipse-card')">Calculate</button>
                     </div>
                 </div>
             </div>
