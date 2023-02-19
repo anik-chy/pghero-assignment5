@@ -23,12 +23,15 @@ function resetFields(field1, field2) {
 }
 
 // result card text formater
-function resultTestFormater(objName, calculatedArea){
-    const names = objName.split('-')
-    let name = names[0].charAt(0).toUpperCase()+names[0].slice(1);
-    const finalStr = name.padEnd(15,' ') + (Math.round(calculatedArea * 100) / 100).toFixed(2)+' cm²';
+function resultTestFormater(objName, calculatedArea) {
+  const names = objName.split("-");
+  let name = names[0].charAt(0).toUpperCase() + names[0].slice(1);
+  const finalStr =
+    name.padEnd(15, " ") +
+    (Math.round(calculatedArea * 100) / 100).toFixed(2) +
+    " cm²";
 
-    return finalStr;
+  return finalStr;
 }
 // area calculation
 function calArea(multiFactor, objName) {
@@ -46,14 +49,21 @@ function calArea(multiFactor, objName) {
     const areaList = document.getElementById("area-list");
 
     const str = resultTestFormater(objName, calculatedArea);
-    console.log(str);
 
-    const li = document.createElement("li");
-    li.setAttribute("id", objName + "-li");
-    li.innerText = str;
-    li.innerHTML = `${str} <button type="button" class="btn btn-primary px-1";
+    // checking if the result is already exist in the sheet or not
+    if (document.getElementById(objName + "-li") === null) {
+      const li = document.createElement("li");
+      li.setAttribute("id", objName + "-li");
+      li.setAttribute("class", "mb-2");
+      li.innerHTML = `${str} <button type="button" class="btn btn-primary px-1";
     onclick="calArea(1,'parallel-card')">Convert to m²</button>`;
-    areaList.appendChild(li);
+      areaList.appendChild(li);
+    }
+    else{
+        const li = document.getElementById(objName + "-li");
+        li.innerHTML = `${str} <button type="button" class="btn btn-primary px-1";
+    onclick="calArea(1,'parallel-card')">Convert to m²</button>`;
+    }
 
     resetFields(field1, field2);
   }
