@@ -70,31 +70,30 @@
                 </div>
                 <!-- parallelogram card  -->
                 <div class="col-12 col-md-3 mb-4">
-                    <div class="card p-3" style="width: 18rem;" id="parallel-card"
-                        onmouseenter="changeRandColor('parallel-card')" onmouseleave="resetCardColor('parallel-card')">
+                    <div class="card p-3" style="width: 18rem;" id="parallelogram-card"
+                        onmouseenter="changeRandColor('parallelogram-card')" onmouseleave="resetCardColor('parallelogram-card')">
                         <img src="images/parallelogram.png" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Parallelogram</h5>
                             <p class="card-text">Area (A) = b x h</p>
                             <div class="d-flex align-items-center m-2 p-1">
-                                <input type="text" class="form-control" placeholder="b" id="parallel-card-f1">
+                                <input type="text" class="form-control" placeholder="b" id="parallelogram-card-f1">
                                 <div>cm</div>
-                                <input type="text" class="form-control" placeholder="h" id="parallel-card-f2">
+                                <input type="text" class="form-control" placeholder="h" id="parallelogram-card-f2">
                                 <div>cm</div>
                             </div>
                             <button type="button" class="btn btn-primary px-4"
-                                onclick="calArea(1,'parallel-card')">Calculate</button>
+                                onclick="calArea(1,'parallelogram-card')">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- result card  -->
+                <!-- area card  -->
                 <div class="col-12 col-md-3 mb-4">
-                    <div class="card p-3" style="width: 18rem;" id="area-card"
+                    <div class="card" style="width: 22rem;" id="area-card"
                         onmouseenter="changeRandColor('area-card')" onmouseleave="resetCardColor('area-card')">
                         <div class="card-body">
                             <h5 class="card-title">Area Calculation</h5>
-                            <ol id="area-list">
-
+                            <ol class="text-start" id="area-list">
                             </ol>
                         </div>
                     </div>
@@ -122,20 +121,20 @@
                 </div>
                 <!-- pentagon card  -->
                 <div class="col-12 col-md-3 mb-4">
-                    <div class="card p-3" style="width: 18rem;" id="penta-card"
-                        onmouseenter="changeRandColor('penta-card')" onmouseleave="resetCardColor('penta-card')">
+                    <div class="card p-3" style="width: 18rem;" id="pentagon-card"
+                        onmouseenter="changeRandColor('pentagon-card')" onmouseleave="resetCardColor('pentagon-card')">
                         <img src="images/pentagon.png" class="card-img-top img-fluid" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Pentagon</h5>
                             <p class="card-text">Area (A) = 0.5 x p x b</p>
                             <div class="d-flex align-items-center m-2 p-1">
-                                <input type="text" class="form-control" placeholder="p" id="penta-card-f1">
+                                <input type="text" class="form-control" placeholder="p" id="pentagon-card-f1">
                                 <div>cm</div>
-                                <input type="text" class="form-control" placeholder="b" id="penta-card-f2">
+                                <input type="text" class="form-control" placeholder="b" id="pentagon-card-f2">
                                 <div>cm</div>
                             </div>
                             <button type="button" class="btn btn-primary px-4"
-                                onclick="calArea(0.5,'penta-card')">Calculate</button>
+                                onclick="calArea(0.5,'pentagon-card')">Calculate</button>
                         </div>
                     </div>
                 </div>
